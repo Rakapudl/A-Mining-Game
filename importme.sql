@@ -1,5 +1,3 @@
-```
-
 --
 -- Database: `amg`
 --
@@ -104,7 +102,7 @@ CREATE TABLE `useronline` (
 --
 
 CREATE TABLE `users` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NULL UNIQUE AUTO_INCREMENT,
   `username` varchar(12) NOT NULL,
   `password` tinytext NOT NULL,
   `session` tinytext NOT NULL,
@@ -123,5 +121,3 @@ CREATE TABLE `users` (
   `showDonatorBenefits` int(11) NOT NULL DEFAULT '0',
   `salt` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
-```
