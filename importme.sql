@@ -55,7 +55,7 @@ CREATE TABLE `group_requests` (
 --
 
 CREATE TABLE `highscores` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL UNIQUE AUTO_INCREMENT,
   `userid` int(11) NOT NULL,
   `money_earned` bigint(11) NOT NULL,
   `pickaxe` varchar(20) NOT NULL,
